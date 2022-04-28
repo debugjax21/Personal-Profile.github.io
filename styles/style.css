@@ -1,4 +1,8 @@
+
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: #F0F0F0;
 }
 
@@ -7,11 +11,36 @@ header {
     height: 600px;
     background-image: url("/img/splash-img.jpg");
     background-size: 100% 100%;
+    position: relative;
+
+}
+
+nav {
+    background-color: #1c2a29;
+    height: 8%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 3%;
+    float: left;
+}
+
+a:hover {
+    background-color: #ccc;
+    color: black;
 }
 
 h1 {
     font-size: 36px;
     color: white;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    margin: auto;
 }
 
 h1, h2{
@@ -20,6 +49,11 @@ h1, h2{
 
 .infoCard {
     margin: 5%;
+}
+
+.outerContainer {
+    display: flex;
+    justify-content: space-around;
 }
 
 #myPic {
@@ -31,6 +65,3 @@ h1, h2{
     display: block;
 }
 
-#aboutMe {
-    display: flex;
-}
