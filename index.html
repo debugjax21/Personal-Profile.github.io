@@ -8,26 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#">ABOUT ME</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">CASE STUDIES</a>
-            <a href="#">CONTACT</a>  
+            <a href="#aboutSection">ABOUT ME</a>
+            <a href="#projectSection">PROJECTS</a>
+            <a href="#contactContainer">CONTACT</a>  
         </nav>
 
         <h1>Jaxon Downing</h1>
 
     </header>
 
-    <section>
+    <section id="aboutSection">
         <h2>About me</h2>
             <!-- About me image. -->
             <img id= "myPic" src="img/me.jpg">
-        <div id="aboutMe" class="outerContainer">
+        <div id="aboutContainer">
             <div class="infoCard">
                 <h3>Personal Info</h3>
                 <p>Hello, my name is Jaxon. I'm an undergrad student at
@@ -49,43 +51,59 @@
         </div>
     </section>
 
-    <section>
+    <section id="projectSection">
         <h2>Projects</h2>
-        <div class="outerContainer">
-            <div>
-                <img>
-                <h4>Project 1</h4>
-                <h5>Problem | Solved</h5>
-                <button type="button">View Project</button>
+        <div id="projectsContainer">
+            <div class="projectCard">
+                <img class="projectImg" src="img/movie-project-img.png">
+                <h4>Movies List</h4>
+                <h5>Uses MVC design pattern to display a default list of movies and ratings. 
+                    Allows user to add, edit, and delete movies int the list.</h5>
+                     <a href="https://resplendent-starlight-cf2caa.netlify.app/" 
+                     target="_blank"><button>View Project</button></a>
             </div>
 
-            <div>
-                <img>
-                <h4>Project 2</h4>
-                <h5>Problem | Solved</h5>
-                <button type="button">View Project</button>
+            <div class="projectCard" id="middleProjectCard">
+                <img class="projectImg" src="img/adventure-game-img.png">
+                <h4>Adventure Game</h4>
+                <h5>Very simple adventure game with a GUI layout. Programed in Java and uses JavaFX framework.</h5>
+                    <a class="button" href="https://github.com/debugjax21/Adventure-Game" target ="_blank"><button> Github Repo</button></a>
             </div>
 
-            <div>
-                <img>
-                <h4>Project 3</h4>
-                <h5>Problem | Solved</h5>
-                <button type="button">View Project</button>
+            <div class="projectCard" id="endProjcetCard">
+                <img class="projectImg" src="img/word-search-img.jpg">
+                <h4>Word Search</h4>
+                <h5>Program uses a text file of scrambled up words and outputs to the command line the coordinates 
+                    to each word and where it was found in the puzzle.
+                     Searches for word in 8 directions. Programed in Java</h5>
+                <a href="https://github.com/debugjax21/Word-Search" target="_blank"><button type="button">Github Repo</button></a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <h2>Let's Connect!</h2>
-        <div>
-            <img>
-            <img>
-            <img>
-            <img>
+    <footer id="contact">
+        <div id="contactContainer">
+            <h2>Let's Connect!</h2>
+            <div class="mediaLogos">
+                <a href="https://www.facebook.com/jaxon.downing" target="_blank">
+                    <img class="mediaLogoImg" src="img/facebook-logo.png"></a>
+
+                    <a href="https://www.instagram.com/jaxdowning21/" target="_blank">
+                        <img class="mediaLogoImg" src="img/insta-logo.png"></a>
+
+                    <a href="https://www.linkedin.com/in/jaxon-downing-7022b920a//" target="_blank">
+                        <img class="mediaLogoImg" src="img/linkedin-logo.png"></a>
+    
+                    <a href="https://github.com/debugjax21" target="_blank">
+                        <img class="mediaLogoImg" src="img/github-logo.png"></a>
+
+                    <a href="mailto:jaxdowning21@gmail.com" target="_blank">
+                        <img class="mediaLogoImg" src="img/email-img.png"></a>
+            </div>
         </div>
 
-        <div id="copywright">
-            Jaxon Downing 2022
+        <div id="copyright">
+            <p>&copy Jaxon Downing 2022</p>
         </div>
     </footer>
     

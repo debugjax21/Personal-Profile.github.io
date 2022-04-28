@@ -1,9 +1,34 @@
+@import url(//db.onlinewebfonts.com/c/83c87eaab9535ea533cabc2f921bf64a?family=AdiHaus);
+@font-face {
+  font-family: "AdiHaus";
+  src: url("//db.onlinewebfonts.com/t/83c87eaab9535ea533cabc2f921bf64a.eot");
+  src: url("//db.onlinewebfonts.com/t/83c87eaab9535ea533cabc2f921bf64a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/83c87eaab9535ea533cabc2f921bf64a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/83c87eaab9535ea533cabc2f921bf64a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/83c87eaab9535ea533cabc2f921bf64a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/83c87eaab9535ea533cabc2f921bf64a.svg#AdiHaus")
+      format("svg");
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
 
 
 body {
     margin: 0;
     padding: 0;
     background-color: #F0F0F0;
+    font-family: "PT Sans", 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+p {
+    font-family: "AdiHaus";
 }
 
 header {
@@ -11,31 +36,40 @@ header {
     height: 600px;
     background-image: url("/img/splash-img.jpg");
     background-size: 100% 100%;
+    background-attachment: fixed;
     position: relative;
 
 }
 
 nav {
     background-color: #1c2a29;
-    height: 8%;
+    height: 3.25rem;
+    width: 100%;
+    position: fixed;
 }
 
-a {
-    text-decoration: none;
+nav a {
     font-family: 'Raleway';
     color: rgba(255, 255, 255, 1);
-    padding: 15px 3%;
+    padding: 1rem 2%;
     float: left;
 }
 
-a:hover {
+nav a:hover {
     background-color: #ccc;
     color: black;
 }
 
-h1 {
-    font-size: 36px;
-    color: white;
+a {
+    text-decoration: none;
+
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1, #copyright p {
     position: absolute;
     right: 50%;
     top: 50%;
@@ -43,17 +77,94 @@ h1 {
     margin: auto;
 }
 
-h1, h2{
+h1 {
+    font-size: 3rem;
+
+}
+
+h1, a button {
+    color: white;
+
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h4, h5 {
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
     text-align: center;
+}
+
+h4 {
+    padding-bottom: 0;
+    font-size: 1.3rem;
+}
+
+h5 {
+    padding-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+
+}
+
+button {
+    background-color: rgb(190,36,36, 1);
+    border: none;
+    width: 100%;
+    height: 4rem;
+}
+
+
+button:hover {
+    background-color: rgba(190, 36, 36, 0.731);
+    cursor: pointer;
+
+}
+
+footer {
+    margin-top: 10%;
+    padding: 48px /*Required padding for assignment.*/
 }
 
 .infoCard {
     margin: 5%;
 }
 
-.outerContainer {
+.projectCard {
+    width: 20%;
+    padding: 48px; /*Required padding for assignment. */
+    border: 1px solid rgba(0, 0, 0, 0.251);
+    box-shadow: 1px 3px 5px #1c2a29;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.projectImg {
+    display: block;
+    width: 100%;
+
+}
+
+.mediaLogos {
+    display: flex;
+    /* width: 15rem; */
+    margin: 5% auto 4rem;
+    justify-content: space-between;
+}
+
+.mediaLogoImg {
+    width: 50px;
+    margin: 0;
 }
 
 #myPic {
@@ -63,5 +174,59 @@ h1, h2{
     margin: auto;
     padding: 15px 10px;
     display: block;
+}
+
+
+#aboutContainer p {
+    line-height: 1.8rem;
+}
+
+
+#projectSection {
+    margin: 5%;
+}
+
+#projectSection, h2 {
+    margin: 5% auto 2%;
+}
+
+#aboutContainer, #projectsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#projectsContainer {
+    padding: 2%;
+}
+
+#middleProjectCard h4{
+    padding: 0.3rem 1rem;
+    padding-top: 1.8rem;
+
+}
+
+#endProjcetCard h4 {
+    padding: 0.3rem 1rem;
+    padding-top: 1.2rem;
+}
+
+#contactContainer {
+    box-sizing: border-box;
+    margin: 12rem auto 10rem;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+#contactContainer h2 {
+    margin: 15%;
+
+}
+
+#copyright {
+    text-align: center;
+    font-size: 12px;
+    height: 5rem;
+    position: relative;
+    font-weight: 700;
 }
 
